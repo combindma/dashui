@@ -30,7 +30,7 @@
                         </svg>
                     </button>
                 </div>
-                @include('admin.partials.menu')
+                @includeIf('admin.partials.menu')
             </div>
             <div class="flex-shrink-0 w-14" aria-hidden="true">
                 <!-- Dummy element to force sidebar to shrink to fit close icon -->
@@ -42,7 +42,7 @@
     <div class="hidden lg:flex lg:flex-shrink-0">
         <div class="flex flex-col w-80">
             <div class="flex flex-col flex-grow border-r border-gray-200 bg-white overflow-y-auto">
-                @include('admin.partials.menu')
+                @includeIf('admin.partials.menu')
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
                 </svg>
             </button>
-           @include('admin.partials.topbar')
+            @includeIf('admin.partials.topbar')
         </div>
         <main class="flex-1 relative overflow-y-auto focus:outline-none">
             @yield('content')
