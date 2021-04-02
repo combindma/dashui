@@ -14,6 +14,7 @@ composer require combindma/dashui
 ```
 
 You can publish the config file with:
+
 ```bash
 php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-config"
 ```
@@ -26,9 +27,17 @@ This is the contents of the published config file:
 ```
 
 You can publish views with:
+
 ```bash
 php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-views"
 ```
+
+You can publish the assets with this command:
+
+```bash
+php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-assets"
+```
+
 ## Testing
 
 ```bash
