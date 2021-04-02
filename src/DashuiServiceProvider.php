@@ -4,7 +4,6 @@ namespace Combindma\Dashui;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Combindma\Dashui\Commands\DashuiCommand;
 
 class DashuiServiceProvider extends PackageServiceProvider
 {
@@ -18,8 +17,6 @@ class DashuiServiceProvider extends PackageServiceProvider
         $package
             ->name('dashui')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_dashui_table')
-            ->hasCommand(DashuiCommand::class);
+            ->hasViews();
     }
 }

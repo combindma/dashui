@@ -1,4 +1,4 @@
-# Dashboard  user interface[D[D[B
+# Dashboard  user interface
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/combindma/dashui.svg?style=flat-square)](https://packagist.org/packages/combindma/dashui)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/combindma/dashui/run-tests?label=tests)](https://github.com/combindma/dashui/actions?query=workflow%3ATests+branch%3Amaster)
@@ -21,8 +21,13 @@ php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" -
 This is the contents of the published config file:
 
 ```php
-return [
-];
+//Prefix to use in dashboard
+    'prefix' => env('ADMIN_URL', 'dashboard')
+```
+
+You can publish views with:
+```bash
+php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-views"
 ```
 ## Testing
 

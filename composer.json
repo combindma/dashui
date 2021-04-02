@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.0"
+        "combindma/recaptcha": "^1.0",
+        "illuminate/contracts": "^8.0",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
