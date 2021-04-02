@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Combindma\Dashui\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DashuiCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'dashui';
 
     public $description = 'My command';
 

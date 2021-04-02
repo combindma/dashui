@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Combindma\Dashui\Tests;
 
 class ExampleTest extends TestCase
 {
