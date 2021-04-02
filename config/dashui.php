@@ -1,6 +1,6 @@
 <?php
 
 return [
-    //Prefix to use in dashboard
-    'prefix' => env('ADMIN_URL', 'dash')
+    //layout to use
+    'layout' => env('THEME_DASH_LAYOUT', 'layout1')
 ];

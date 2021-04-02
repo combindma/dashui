@@ -22,20 +22,14 @@ php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" -
 This is the contents of the published config file:
 
 ```php
-//Prefix to use in dashboard
-    'prefix' => env('ADMIN_URL', 'dashboard')
+    //layout to use
+    'layout' => env('THEME_DASH_LAYOUT', 'layout1')
 ```
 
 You can publish views with:
 
 ```bash
 php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-views"
-```
-
-You can publish the assets with this command:
-
-```bash
-php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-assets"
 ```
 
 ## Testing
