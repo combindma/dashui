@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script type="text/javascript" src="{{ mix('/assets/js/alpine.js') }}" defer></script>
     @stack('head')
-    <link rel="stylesheet" href="{{ mix('/assets/css/admin.css') }}">
+    <link rel="stylesheet" href="{{ mix('/assets/css/dash.css') }}">
 </head>
 <body class="antialiased font-sans bg-gray-200">
 <div class="min-h-screen bg-gray-100">

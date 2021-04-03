@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script type="text/javascript" src="{{ mix('/assets/js/alpine.js') }}" defer></script>
     @stack('head')
-    <link rel="stylesheet" href="{{ mix('/assets/css/admin.css') }}">
+    <link rel="stylesheet" href="{{ mix('/assets/css/dash.css') }}">
 </head>
 <body class="font-sans @if(\Illuminate\Support\Facades\App::environment('local')) debug-screens @endif">
 <div class="h-screen flex overflow-hidden bg-gray-100" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
