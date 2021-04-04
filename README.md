@@ -31,11 +31,6 @@ You can publish views with:
 php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" --tag="dashui-views"
 ```
 
-## Testing
-
-```bash
-composer test
-```
 
 ## Changelog
 
