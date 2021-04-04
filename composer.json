@@ -17,10 +17,14 @@
     ],
     "require": {
         "php": "^8.0",
+        "combindma/flash": "^1.0",
         "illuminate/contracts": "^8.0",
         "spatie/laravel-package-tools": "^1.4.3"
+    }
+    ,
+    "require-dev": {
+        "orchestra/testbench": "^6.15"
     },
-    "require-dev": {},
     "autoload": {
         "psr-4": {
             "Combindma\\Dashui\\": "src"
