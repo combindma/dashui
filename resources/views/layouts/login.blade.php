@@ -2,12 +2,12 @@
 <html lang="fr">
 <head>
     <title>@yield('title') | {{ config('app.name') }}</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="{{ url('favicon.png') }}">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="{{ mix('/assets/css/admin.css') }}">
-    <script type="text/javascript" src="{{ mix('/assets/js/admin.js') }}"></script>
+    <link rel="stylesheet" href="{{ mix('/assets/css/dash.css') }}">
+    <script type="text/javascript" src="{{ mix('/assets/js/alpine.js') }}" defer></script>
     {!! htmlScriptTagJsApi(['action' => 'loginDashboard']) !!}
 </head>
 <body>
