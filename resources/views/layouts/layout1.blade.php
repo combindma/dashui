@@ -9,10 +9,10 @@
     <script type="text/javascript" src="{{ mix('/assets/js/alpine.js') }}" defer></script>
     @stack('head')
     <link rel="stylesheet" href="{{ mix('/assets/css/dash.css') }}">
+    @livewireStyles
 </head>
 <body class="font-sans @if(\Illuminate\Support\Facades\App::environment('local')) debug-screens @endif">
 <div class="h-screen flex overflow-hidden bg-gray-100" x-data="{ sidebarOpen: false }" @keydown.window.escape="sidebarOpen = false">
-
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
     <div x-show="sidebarOpen" class="lg:hidden">
         <div class="fixed inset-0 flex z-40">
@@ -21,7 +21,7 @@
                 <div class="absolute inset-0 bg-gray-600 opacity-75"></div>
             </div>
             <!-- Off-canvas menu, show/hide based on off-canvas menu state. -->
-            <div x-show="sidebarOpen"  x-transition:enter="transition ease-in-out duration-300 transform" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-in-out duration-300 transform" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" class="relative flex-1 flex flex-col max-w-xs w-full bg-white">
+            <div x-show="sidebarOpen" x-transition:enter="transition ease-in-out duration-300 transform" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-in-out duration-300 transform" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" class="relative flex-1 flex flex-col max-w-xs w-full bg-white">
                 <div class="absolute top-0 right-0 -mr-12 pt-2">
                     <button x-show="sidebarOpen" @click="sidebarOpen = false" class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span class="sr-only">Close sidebar</span>
@@ -37,7 +37,6 @@
             </div>
         </div>
     </div>
-
     <!-- Static sidebar for desktop -->
     <div class="hidden lg:flex lg:flex-shrink-0">
         <div class="flex flex-col w-80">
@@ -46,7 +45,6 @@
             </div>
         </div>
     </div>
-
     <div class="flex flex-col w-0 flex-1 overflow-hidden">
         <div class="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
             <button @click.stop="sidebarOpen = true" class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 lg:hidden">
@@ -61,8 +59,8 @@
             @yield('content')
         </main>
     </div>
-
 </div>
+@livewireScripts
 @stack('js')
 </body>
 </html>

@@ -9,6 +9,7 @@
     <script type="text/javascript" src="{{ mix('/assets/js/alpine.js') }}" defer></script>
     @stack('head')
     <link rel="stylesheet" href="{{ mix('/assets/css/dash.css') }}">
+    @livewireStyles
 </head>
 <body class="antialiased font-sans bg-gray-200">
 <div class="min-h-screen bg-gray-100">
@@ -22,6 +23,7 @@
         </main>
     </div>
 </div>
+@livewireScripts
 @stack('js')
 </body>
 </html>
