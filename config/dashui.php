@@ -1,6 +1,7 @@
 <?php
 
 return [
-    //layout to use
-    'layout' => env('THEME_DASH_LAYOUT', 'layout1')
+    'layout' => 'layout1',  // choose between layout1 or layout2
+    'css_path' => '/assets/css/tailwind.css',
+    'js_path' => '/assets/js/alpine.js',
 ];

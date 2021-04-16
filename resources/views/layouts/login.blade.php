@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="{{ url('favicon.png') }}">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="{{ mix('/assets/css/dash.css') }}">
-    <script type="text/javascript" src="{{ mix('/assets/js/alpine.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ mix(config('dashui.css_path')) }}">
+    <script type="text/javascript" src="{{ mix(config('dashui.js_path')) }}" defer></script>
     {!! htmlScriptTagJsApi(['action' => 'loginDashboard']) !!}
 </head>
 <body>

@@ -21,8 +21,11 @@ php artisan vendor:publish --provider="Combindma\Dashui\DashuiServiceProvider" -
 This is the contents of the published config file:
 
 ```php
-    //layout to use
-    'layout' => env('THEME_DASH_LAYOUT', 'layout1')
+return [
+    'layout' => 'layout1',  // choose between layout1 or layout2
+    'css_path' => '/assets/css/tailwind.css',
+    'js_path' => '/assets/js/alpine.js',
+];
 ```
 
 You can publish views with:
