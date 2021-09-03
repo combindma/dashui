@@ -45,7 +45,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Combind](https://github.com/combindma)
-- [All Contributors](../../contributors)
+
+[comment]: <> (- [All Contributors]&#40;../../contributors&#41;)
 
 ## License
 
