@@ -32,13 +32,13 @@
                 </div>
                 @includeIf('admin.partials.menu')
             </div>
-            <div class="flex-shrink-0 w-14" aria-hidden="true">
+            <div class="shrink-0 w-14" aria-hidden="true">
                 <!-- Dummy element to force sidebar to shrink to fit close icon -->
             </div>
         </div>
     </div>
     <!-- Static sidebar for desktop -->
-    <div class="hidden lg:flex lg:flex-shrink-0">
+    <div class="hidden lg:flex lg:shrink-0">
         <div class="flex flex-col w-80">
             <div class="flex flex-col flex-grow border-r border-gray-200 bg-white overflow-y-auto">
                 @includeIf('admin.partials.menu')
@@ -46,7 +46,7 @@
         </div>
     </div>
     <div class="flex flex-col w-0 flex-1 overflow-hidden">
-        <div class="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
+        <div class="relative z-10 shrink-0 flex h-16 bg-white shadow">
             <button @click.stop="sidebarOpen = true" class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 lg:hidden">
                 <span class="sr-only">Open sidebar</span>
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
